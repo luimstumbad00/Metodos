@@ -16,7 +16,7 @@ def cuadratura_gaussiana(expr_str, a, b, puntos=3, n_subintervalos=1):
     puntos: 2, 3, 4 o 5.
     n_subintervalos: Si es 1 es Simple, si es > 1 es Compuesta.
     """
-    if puntos not def in GAUSS_DATA:
+    if puntos not in GAUSS_DATA:
         raise ValueError("Puntos soportados: 2, 3, 4 o 5.")
         
     x = sp.symbols('x')
